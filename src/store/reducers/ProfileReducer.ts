@@ -1,7 +1,7 @@
 import { GET_PROFILE, SET_PROFILE } from '../actions/types';
 
 const initialState = {
-  theme: 'basicui-dark',
+  theme: 'basicui-light',
   textSize: 'textsize_medium',
   themeColor: 'themecolor1',
   sidebar: true,

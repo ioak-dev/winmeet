@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setProfile } from '../../store/actions/ProfileActions';
 import MobileSidebar from '../MobileSidebar';
 import './style.scss';
+import Logo from '../Logo';
 
 interface Props {
   title: string;
@@ -37,13 +38,14 @@ const Topbar = (props: Props) => {
     <>
       <div className="topbar">
         <div className="topbar__left">
-          <button className="button desktop-only" onClick={toggleSidebar}>
+          {/* <button className="button desktop-only" onClick={toggleSidebar}>
             <FontAwesomeIcon icon={faBars} />
           </button>
           <button className="button mobile-only" onClick={toggleMobileSidebar}>
             <FontAwesomeIcon icon={faBars} />
-          </button>
-          <div>{props.title}</div>
+          </button> */}
+          {/* <div>{props.title}</div> */}
+          <Logo />
         </div>
         <div className="topbar__right">{props.children}</div>
       </div>

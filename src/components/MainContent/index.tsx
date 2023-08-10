@@ -25,14 +25,6 @@ const MainContent = (props: Props) => {
 
   return (
     <>
-      {location.pathname !== '/login' && <div className="desktop-only">
-        <SideContent space={props.space} />
-      </div>}
-      {/* <NavigationContainer
-        cookies={props.cookies}
-        space={props.space}
-        transparent={false}
-      /> */}
       <div
         className={`main-content ${profile.sidebar
           ? 'main-content__sidebar-active'

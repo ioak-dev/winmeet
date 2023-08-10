@@ -6,6 +6,7 @@ import { loginPageSubject } from '../../events/LoginPageEvent';
 import ProtectedRouteApp from '../ProtectedRouteApp';
 import LandingPage from '../Page/LandingPage';
 import UnauthorizedPage from '../Page/UnauthorizedPage';
+import HomePage from '../Page/HomePage';
 
 interface Props {
 }
@@ -28,14 +29,14 @@ const RouterView = (props: Props) => {
           path="/"
           element={
             <ProtectedRouteApp
-              middleware={['authenticate']} component={LandingPage} />
+              middleware={['authenticate']} component={HomePage} />
           }
         />
         <Route
           path="/home"
           element={
             <ProtectedRouteApp
-              middleware={['authenticate']} component={LandingPage} />
+              middleware={['authenticate']} component={HomePage} />
           }
         />
         <Route
